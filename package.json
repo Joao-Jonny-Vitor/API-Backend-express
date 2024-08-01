@@ -4,6 +4,7 @@
   "description": "API Node com framework Express",
   "main": "src/server.js",
   "scripts": {
+    "start": "node src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/Joao-Jonny-Vitor/API-Backend-express/issues"
   },
-  "homepage": "https://github.com/Joao-Jonny-Vitor/API-Backend-express#readme"
+  "homepage": "https://github.com/Joao-Jonny-Vitor/API-Backend-express#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }

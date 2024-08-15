@@ -1,9 +1,8 @@
-import productModel from "../../models/productModel";
+import productModel from "../../models/productModel.js"
 
 const editProduct = (req, res) => {
 
-    const product = productModel.getAll()
-    res.json(product)
+    res.json("PUT na rota /product")
 }
 
 export default editProduct

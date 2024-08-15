@@ -1,9 +1,9 @@
-import productModel from "../../models/productModel";
+import productModel from "../../models/productModel.js"
 
 const createProduct = (req, res) => {
 
-    const product = productModel.getAll()
-    res.json(product)
+    
+    res.json("POST na rota /product")
 }
 
 export default createProduct

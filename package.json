@@ -7,7 +7,8 @@
   "scripts": {
     "start": "node src/server.js",
     "dev": "node --watch src/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prisma:pull": "npx prisma db pull",
+    "prisma:generate": "npx prisma generate"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,10 @@
   },
   "homepage": "https://github.com/Joao-Jonny-Vitor/API-Backend-express#readme",
   "dependencies": {
+    "@prisma/client": "^5.18.0",
     "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "prisma": "^5.18.0"
   }
 }

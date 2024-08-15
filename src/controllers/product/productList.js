@@ -1,8 +1,8 @@
-import productModel from "../../models/productModel";
+import productModel from "../../models/productModel.js"
 
-const productList = (req, res) => {
+const productList = async(req, res) => {
 
-    const product = productModel.getAll()
+    const product = await productModel.getAll()
     res.json(product)
 }
 

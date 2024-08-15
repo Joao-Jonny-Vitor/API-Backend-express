@@ -1,9 +1,9 @@
-import productModel from "../../models/productModel";
+import productModel from "../../models/productModel.js"
 
 const deleteProduct = (req, res) => {
 
-    const product = productModel.getAll()
-    res.json(product)
+   
+    res.json("DELETE na rota /product")
 }
 
 export default deleteProduct

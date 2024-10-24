@@ -8,10 +8,12 @@ import logger from './middlewares/logger.js'
 import welcome from './controllers/welcome.js'
 import routeNotFound from './controllers/routeNotFound.js'
 import errorHandler from './middlewares/errorHandler.js'
+import cors from 'cors'
 
 const app = express()
 
 app.use(logger)
+app.use(cors)
 
 //middleware q faz com que seja possivel converter JSON
 app.use(express.json())
